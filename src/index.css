@@ -7,8 +7,19 @@ h1 {
   width: 50%;
   margin: auto;
   background-color: ivory;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.powerBtn {
-  background-color: aquamarine;
+.drumpads-container {
+  display: grid;
+  height: 15rem;
+  width: 15rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.drum-pad {
+  border: 1px grey solid;
+  font-size: 20px;
 }
