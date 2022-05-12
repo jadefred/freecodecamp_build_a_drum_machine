@@ -68,6 +68,7 @@ function Drumpads(props) {
   function playSound(keynote, id) {
     if (props.power) {
       const audio = document.getElementById(keynote);
+      audio.volume = props.volume / 100;
       audio.play();
       props.setKeyDisplay(id);
     }

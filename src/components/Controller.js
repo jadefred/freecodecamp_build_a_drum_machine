@@ -6,6 +6,7 @@ function Controller(props) {
   function powerControl() {
     if (props.powerSetting.power) {
       props.powerSetting.setPower(false);
+      props.keyDisplay.setKeyDisplay("");
       setOnOff("Off");
     } else {
       props.powerSetting.setPower(true);
@@ -13,15 +14,19 @@ function Controller(props) {
     }
   }
 
+  function handleVolumn(e) {
+    props.volume.setVolume(e.target.value);
+  }
+
   return (
     <>
       <button className="power-btn" onClick={powerControl}>
         {onOff}
       </button>
-      <div>You audio display</div>
+      <div>{props.keyDisplay.keyDisplay}</div>
       <div>
         <label htmlFor="myRange">Volume : </label>
-        <input type="range" min="1" max="100" className="slider" id="myRange" />
+        <input onChange={handleVolumn} type="range" min="1" max="100" value={props.volume.volume} className="slider" id="myRange" />
       </div>
       <button>Bank 1</button>
     </>
