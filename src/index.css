@@ -5,7 +5,7 @@ body {
 
 h1 {
   text-align: center;
-  color: #d4a373;
+  color: #b88d63;
   font-family: "Oleo Script Swash Caps", Arial, Helvetica, sans-serif;
   font-size: 50px;
 }
@@ -15,7 +15,7 @@ p {
 }
 
 #drum-machine {
-  border: 6px #d4a373 solid;
+  border: 6px #b88d63 solid;
   border-radius: 5px;
   padding: 2rem;
   width: 50%;
@@ -38,11 +38,11 @@ p {
 }
 
 .drum-pad {
-  border: 4px #d4a373 solid;
+  border: 4px #b88d63 solid;
   border-radius: 5px;
   font-size: 20px;
   background-color: #faedcd;
-  color: #d4a373;
+  color: #b88d63;
   font-family: "Merriweather", Arial, Helvetica, sans-serif;
 }
 
@@ -69,7 +69,7 @@ p {
 }
 
 .audio-name {
-  background-color: #d4a373;
+  background-color: #b88d63;
   height: 3rem;
   width: 100%;
   display: flex;
@@ -93,7 +93,7 @@ p {
   margin-bottom: 0.2rem;
   font-family: "Merriweather", Arial, Helvetica, sans-serif;
   font-weight: 700;
-  color: #d4a373;
+  color: #b88d63;
 }
 
 /* input range bar style */
@@ -111,14 +111,14 @@ input[type="range"]::-webkit-slider-runnable-track {
   height: 6px;
   cursor: pointer;
   animate: 0.2s;
-  box-shadow: 0px 0px 0px #d4a373;
-  background: #d4a373;
+  box-shadow: 0px 0px 0px #b88d63;
+  background: #b88d63;
   border-radius: 0px;
-  border: 0px solid #d4a373;
+  border: 0px solid #b88d63;
 }
 input[type="range"]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #d4a373;
-  border: 0px solid #d4a373;
+  box-shadow: 1px 1px 1px #b88d63;
+  border: 0px solid #b88d63;
   height: 25px;
   width: 25px;
   border-radius: 31px;
@@ -128,21 +128,21 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -9.5px;
 }
 input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #d4a373;
+  background: #b88d63;
 }
 input[type="range"]::-moz-range-track {
   width: 100%;
   height: 6px;
   cursor: pointer;
   animate: 0.2s;
-  box-shadow: 0px 0px 0px #d4a373;
-  background: #d4a373;
+  box-shadow: 0px 0px 0px #b88d63;
+  background: #b88d63;
   border-radius: 0px;
-  border: 0px solid #d4a373;
+  border: 0px solid #b88d63;
 }
 input[type="range"]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #d4a373;
-  border: 0px solid #d4a373;
+  box-shadow: 1px 1px 1px #b88d63;
+  border: 0px solid #b88d63;
   height: 25px;
   width: 25px;
   border-radius: 31px;
@@ -159,20 +159,20 @@ input[type="range"]::-ms-track {
   color: transparent;
 }
 input[type="range"]::-ms-fill-lower {
-  background: #d4a373;
-  border: 0px solid #d4a373;
+  background: #b88d63;
+  border: 0px solid #b88d63;
   border-radius: 0px;
-  box-shadow: 0px 0px 0px #d4a373;
+  box-shadow: 0px 0px 0px #b88d63;
 }
 input[type="range"]::-ms-fill-upper {
-  background: #d4a373;
-  border: 0px solid #d4a373;
+  background: #b88d63;
+  border: 0px solid #b88d63;
   border-radius: 0px;
-  box-shadow: 0px 0px 0px #d4a373;
+  box-shadow: 0px 0px 0px #b88d63;
 }
 input[type="range"]::-ms-thumb {
-  box-shadow: 1px 1px 1px #d4a373;
-  border: 0px solid #d4a373;
+  box-shadow: 1px 1px 1px #b88d63;
+  border: 0px solid #b88d63;
   height: 25px;
   width: 25px;
   border-radius: 31px;
@@ -180,10 +180,10 @@ input[type="range"]::-ms-thumb {
   cursor: pointer;
 }
 input[type="range"]:focus::-ms-fill-lower {
-  background: #d4a373;
+  background: #b88d63;
 }
 input[type="range"]:focus::-ms-fill-upper {
-  background: #d4a373;
+  background: #b88d63;
 }
 
 /* input range bar style */
@@ -195,16 +195,40 @@ input[type="range"]:focus::-ms-fill-upper {
   font-size: 16px;
   margin-bottom: 10px;
   font-weight: 700;
-  color: #d4a373;
+  color: #b88d63;
 }
 
 .audio-bank-box button {
-  border: 1px solid #d4a373;
+  border: 1px solid #b88d63;
   font-size: 16px;
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 5px;
   font-family: "Merriweather", Arial, Helvetica, sans-serif;
   background-color: #faedcd;
-  color: #d4a373;
+  color: #b88d63;
+}
+
+/* media query */
+@media only screen and (max-width: 1000px) {
+  #drum-machine {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #drum-machine {
+    width: 80%;
+    min-width: 300px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 3rem;
+  }
+
+  .drumpads-container {
+    width: 80%;
+  }
 }
