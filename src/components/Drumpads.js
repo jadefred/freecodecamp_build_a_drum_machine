@@ -66,9 +66,11 @@ function Drumpads(props) {
   }, []);
 
   function playSound(keynote, id) {
-    const audio = document.getElementById(keynote);
-    audio.play();
-    props.setKeyDisplay(id);
+    if (props.power) {
+      const audio = document.getElementById(keynote);
+      audio.play();
+      props.setKeyDisplay(id);
+    }
   }
 
   return (
