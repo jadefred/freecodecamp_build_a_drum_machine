@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/freecodecamp_build_a_drum_machine/static/css/main.f5c980b5.css",
+    "main.js": "/freecodecamp_build_a_drum_machine/static/js/main.95dc1e29.js",
+    "index.html": "/freecodecamp_build_a_drum_machine/index.html",
+    "main.f5c980b5.css.map": "/freecodecamp_build_a_drum_machine/static/css/main.f5c980b5.css.map",
+    "main.95dc1e29.js.map": "/freecodecamp_build_a_drum_machine/static/js/main.95dc1e29.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5c980b5.css",
+    "static/js/main.95dc1e29.js"
+  ]
+}
